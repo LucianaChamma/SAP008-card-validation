@@ -1,18 +1,58 @@
-const validator = {
-  isValid:function (cardNumber) {
-    console.log(cardNumber)
+
+ const validator = {
+  
+  isValid: (creditCardNumber) => {
+    const numCard = creditCardNumber.split("").reverse()
+    let retCard = 0;
+     
+    for (let i=0;i<numCard.length; i++){ 
+    let transfCard = parseInt(numCard[i])
+  
+    if (i % 2 !==0 && transfCard >= 5){
+      retCard = retCard + ((transfCard*2)-9)
+      
+    } 
+    else if (i%2 !==0 && transfCard <5 ){
+      retCard = retCard + (transfCard*2)
+  
+    }
+    else {
+    retCard =  retCard + transfCard 
+    
+    }
+    }
+  
+    if (retCard %10===0) {
+      return true
+      
+  
+    }
+     else {
+      return false
+     }
+  
+  },
+  
+  
+  maskify: (creditCardNumber) => {
+    return creditCardNumber.replace(/.(?=.{4})/g, "#");
+    
+  }
+  */
   }
   
-};
+  
+  
+  export default validator;
+     
+ 
+ /*const validator = {
+  
+    isValid: function(creditCardNumber) {
+      let arrayReversed = creditCardNumber.split('').reverse();
+      
+    },
 
+  }
 
-
-// function maskify(creditCard) {
-// 	if (CreditCard.length < 6) return creditCard;
-// 	const last4Characters = creditCard.substr(-4);
-// 	const firstCharacter = creditCard.substr(0, 1);
-// 	const maskingCharacters = creditCard.substr(1, creditCard.length - 5).replace(/\d/g, '#');
-// 	return `${firstCharacter}${maskingCharacters}${last4Characters}`;
-// }
-
-export default validator;
+*/
