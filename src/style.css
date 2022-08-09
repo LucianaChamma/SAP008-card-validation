@@ -19,7 +19,7 @@ body {
 	align-items: center;
 }
 
-/* ---------- Estilos Generales de las Tarjetas ----------*/
+/* ---------- Estilo Face Cartão----------*/
 .cartao {
 	width: 100%;
 	max-width: 550px;
@@ -32,9 +32,7 @@ body {
 	z-index: 2;
 }
 
-.cartao.active {
-	transform: rotateY(180deg);
-}
+
 
 .cartao > div {
 	padding: 30px;
@@ -134,9 +132,6 @@ body {
 	transition: clip-path .3s ease-out;
 }
 
-.formulario-cartao.active {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
 
 .formulario-cartao label {
 	display: block;

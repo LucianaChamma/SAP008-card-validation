@@ -9,30 +9,22 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 	<div class="recipiente">
-
 		<form>
-			Nome Completo : <input type="text" id="nome"><br>
-			Data de Validade: <input type="month" id="mes"><br>
-			CVV: <input type="number" id="CVV"><br>
-			Número do Cartão : <input type="number"  id="numCartao" placeholder= "** ** ** ** "/><br>
-			<input type="button" id="btn" value="Confirmar Compra"></button> 
-			<p id="outCard"></p>
-			</form>
-
-		<!--  
+		<!--Face Cartão  -->
 		<section class="cartao" id="cartao">
 			<div class="face">
 				<div class="logo-marca" id="logo-marca">
-					<!-- <img src="visa-mastercard-logo.png" alt="">  
+				<img src="visa-mastercard-logo.png" alt=""> 
 				</div>
+				
 				<img src="img/credit-card-chip.png" class="chip" alt="">
 				<div class="form">
 					<div class="grupo" id="numDigitado">
 						<p class="label">Número do cartão</p> 
 						<input type="text" class="numero" id="numCartao" placeholder="#### #### #### ####">
 					</div>
+					
 					<div class="flexbox">
 						<div class="grupo" id="nomeCartao">
 							<p class="label">Nome no Cartão</p>
@@ -48,14 +40,14 @@
 				<input type="button" id="btnCartao" value="Validar">
 		</section>
 
-		<!-- Recipiente Botão Abrir Formulario 
+		 <!-- Recipiente Botão Abrir Formulario  -->
 		<div class="recipiente-btn">
 			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
 				<i class="fas fa-plus"></i>
 			</button>
 		</div>
 
-		<!-- Formulario 
+		<!-- Formulario -->
 		<form action="" id="formulario-cartao" class="formulario-cartao">
 			<div class="grupo">
 				<label for="inputNumero">Número Cartão</label>

@@ -1,4 +1,3 @@
-
  const validator = {
   
   isValid: (creditCardNumber) => {
@@ -38,7 +37,7 @@
     return creditCardNumber.replace(/.(?=.{4})/g, "#");
     
   }
-  */
+  
   }
   
   
