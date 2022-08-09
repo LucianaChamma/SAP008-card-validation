@@ -1,4 +1,4 @@
- const validator = {
+const validator = {
   
   isValid: (creditCardNumber) => {
     const numCard = creditCardNumber.split("").reverse()
@@ -43,7 +43,8 @@
   
   
   export default validator;
-     
+  
+  
  
  /*const validator = {
   

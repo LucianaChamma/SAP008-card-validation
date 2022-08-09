@@ -1,37 +1,26 @@
 import validator from "./validator.js";
 
-   
 let runbtn = document.getElementById("btnCartao");
-let finalResult = document.getElementById("outCard");
+// let finalResult = document.getElementById("outCard");
 runbtn.addEventListener("click", validatorCard);
 
-    function validatorCard(){
-     let numCartao = document.getElementById("numCartao").value;
-console.log(numCartao)
+function validatorCard() {
+	let numCartao = document.getElementById("numCartao").value;
+	let result = validator.isValid(numCartao);
+	let cardMaskify = validator.maskify(numCartao);
+	console.log(result)
 
-
-
-     /*let result = validator.isValid(numDigitado);
-     let cardMaskify = validator.maskify(numDigitado);
-     console.log (result)
-     
-    
-
-     if(result === "") {
-        return alert ("Digite um número");
-     }
-     else if(result == true) {
-         alert ( cardMaskify + " CARTÃO VÁLIDO");
-     }
-     else{
-         alert ( cardMaskify + " CARTÃO INVÁLIDO");
-     }*/
+	// Condicionais para exibição do resultado
+	if (numCartao === "") {
+		return alert("Digite um número");
 	}
-
-
-
-
-
+	else if (result == true) {
+		alert(cardMaskify + " CARTÃO VÁLIDO");
+	}
+	else {
+		alert(cardMaskify + " CARTÃO INVÁLIDO");
+	}
+}
 
 
 
