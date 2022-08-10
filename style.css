@@ -1,0 +1,215 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ddeefc;
+	font-family: 'Lato', sans-serif;
+}
+
+.recipiente {
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ---------- Estilo Face Cartão----------*/
+.cartao {
+	width: 100%;
+	max-width: 6500px;
+	position: relative;
+	color: rgb(14, 13, 13);
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+}
+
+
+
+.cartao>div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
+}
+
+/* ---------- Face Cartão ----------*/
+
+.cartao .face {
+	width: 100%;
+	/*background: url(./img/modelo-de-cartao.png.webp);*/
+	background-size: cover;
+}
+
+.face .logo-marca {
+	text-align: right;
+	min-height: 50px;
+}
+
+.face .logo-marca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.face .chip {
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.face .grupo .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.face .grupo .numero,
+.face .grupo .nome,
+.face .grupo .validade {
+	color: rgb(17, 16, 16);
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.face .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+
+/* ---------- Recipiente  Botão ----------*/
+.recipiente-btn .btn-abrir-formulario {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 20px;
+	background: #2364d2;
+	color: rgb(27, 26, 26);
+	position: relative;
+	top: -25px;
+	z-index: 3;
+	border-radius: 100%;
+	box-shadow: -5px 4px 8px rgba(24, 56, 182, 0.4);
+	padding: 5px;
+	transition: all .2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.recipiente-btn .btn-abrir-formulario:hover {
+	background: #1850b1;
+}
+
+.recipiente-btn .btn-abrir-formulario.active {
+	transform: rotate(45deg);
+}
+
+/* ---------- Formulario Dados Cartão ----------*/
+.formulario-cartao {
+	background: #fff;
+	width: 100%;
+	max-width: 700px;
+	padding: 150px 30px 30px 30px;
+	border-radius: 10px;
+	position: relative;
+	top: -150px;
+	z-index: 1;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	transition: clip-path .3s ease-out;
+}
+
+
+.formulario-cartao label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formulario-cartao input,
+.formulario-cartao select,
+.btn-enviar {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.formulario-cartao input:hover,
+.formulario-cartao select:hover {
+	border: 2px solid #93BDED;
+}
+
+.formulario-cartao input:focus,
+.formulario-cartao select:focus {
+	outline: rgb(4, 4, 4);
+	box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
+}
+
+.formulario-cartao input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formulario-cartao .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-cartao .expira {
+	width: 100%;
+}
+
+
+.formulario-cartao .grupo-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.formulario-cartao select {
+	-webkit-appearance: none;
+}
+
+.formulario-cartao .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.formulario-cartao .grupo-select:hover i {
+	color: #93bfed;
+}
+
+.formulario-cartao .btn-enviar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #2364d2;
+	box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
+	cursor: pointer;
+}
+
+.formulario-cartao .btn-enviar:hover {
+	background: #1850b1;
+}

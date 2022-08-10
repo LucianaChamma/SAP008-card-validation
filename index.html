@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formulário de Cartão de Crédito</title>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="recipiente">
+		<form>
+			<!--Face Cartão  -->
+			<section class="cartao" id="cartao">
+				<div class="face">
+					<div class="logo-marca" id="logo-marca">
+						<img src="./img/visa-mastercard-logo.png" alt="">
+					</div>
+
+					<img src="img/credit-card-chip.png" class="chip" alt="">
+					<div class="form">
+						<div class="grupo" id="numDigitado">
+							<p class="label">Número do cartão</p>
+							<!-- input para o numero do cartão -->
+							<input type="text" class="numero" id="numCartao" placeholder="#### #### #### ####">
+						</div>
+
+						<div class="flexbox">
+							<div class="grupo" id="nomeCartao">
+								<p class="label">Nome no Cartão</p>
+								<p class="nome">Luciana Chamma</p>
+							</div>
+
+							<div class="grupo" id="validade">
+								<p class="label">Validade</p>
+								<p class="validade"><span class="mes">MM</span> / <span class="ano">AA</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- botão de validação -->
+				<input type="button" id="btnCartao" value="Validar">
+			</section>
+		</form>
+	</div>
+	<!-- Recipiente Botão Abrir Formulario 
+	<div class="recipiente-btn">
+		<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+			<i class="fas fa-plus"></i>
+		</button>
+	</div>
+
+	-- Formulario 
+	<form action="" id="formulario-cartao" class="formulario-cartao">
+		<div class="grupo">
+			<label for="inputNumero">Número Cartão</label>
+			<input type="text" id="numDigitado" maxlength="19" autocomplete="off">
+		</div>
+		<div class="grupo">
+			<label for="inputNome">Nome</label>
+			<input type="text" id="inputNome" maxlength="19" autocomplete="off">
+		</div>
+		<button type="submit" class="btn-enviar" id="outCard">Enviar Informações</button>
+	</form> -->
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
