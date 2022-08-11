@@ -5,7 +5,9 @@
 }
 
 body {
-	background: #ddeefc;
+	background-image: url(img/fundoPets.png);
+	background-repeat: no-repeat;
+	background-size: 1300px 850px;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -22,7 +24,7 @@ body {
 /* ---------- Estilo Face Cartão----------*/
 .cartao {
 	width: 100%;
-	max-width: 550px;
+	max-width: 6500px;
 	position: relative;
 	color: rgb(14, 13, 13);
 	transition: .3s ease all;
