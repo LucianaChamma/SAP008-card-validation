@@ -1,5 +1,7 @@
 # Cartão de Crédito Válido
 
+## (https://lucianachamma.github.io/SAP008-card-validation/src/index.html)
+
 ## Índice
 
 * [1. Sobre](#1-Introdução)
@@ -27,7 +29,13 @@ seus dígitos finais for um múltiplo de 10.
 ![gráfico do algoritmo de
 Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
-## 2. Resumo do projeto
+## 2. Objetivo do projeto
+
+https://lucianachamma.github.io/SAP008-card-validation/src/index.html
+
+
+Este aplicativo foi criado para atender os clientes que desejam ajudar as ONG's de animais através de doações seguras, utilizando o cartão de crédito.
+
 
 Neste projeto, você precisará criar um aplicativo da Web que permita ao usuário
 validar o número de um cartão de crédito.  Além disso, você precisará
@@ -44,7 +52,10 @@ JavaScript como tecnologias.
 
 ## 3. Objetivos de aprendizagem
 
+![Fluxograma](https://github.com/LucianaChamma/SAP008-card-validation/blob/main/src/img/fluxograma-formulario.png)
+
 Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
+O aplicativo terá dois caminhos que informarão se os dados informados do cartão
 
 ### HTML
 

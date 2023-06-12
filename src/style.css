@@ -5,13 +5,11 @@
 }
 
 body {
-	background-image: url(img/fundoPets.png);
-	background-repeat: no-repeat;
-	background-size: 1300px 850px;
+	background: #ddeefc;
 	font-family: 'Lato', sans-serif;
 }
 
-.recipiente {
+main {
 	width: 90%;
 	max-width: 1000px;
 	padding: 40px 20px;
@@ -24,7 +22,7 @@ body {
 /* ---------- Estilo Face Cartão----------*/
 .cartao {
 	width: 100%;
-	max-width: 6500px;
+	max-width: px;
 	position: relative;
 	color: rgb(14, 13, 13);
 	transition: .3s ease all;
@@ -50,7 +48,6 @@ body {
 
 .cartao .face {
 	width: 100%;
-	/*background: url(./img/modelo-de-cartao.png.webp);*/
 	background-size: cover;
 }
 
@@ -92,126 +89,35 @@ body {
 	margin-top: 20px;
 }
 
+.btn-validar {
+	border-top: 1px solid #96d1f8;
+	background: #65a9d7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+	background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+	background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+	background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+	background: -o-linear-gradient(top, #3e779d, #65a9d7);
+	padding: 16px 32px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: white;
+	font-size: 14px;
+	font-family: Georgia, serif;
+	text-decoration: none;
+	vertical-align: middle;
+	}
+ .btn-validar:hover {
+	border-top-color: #28597a;
+	background: #28597a;
+	color: #ccc;
+	}
+ .btn-validar:active {
+	border-top-color: #1b435e;
+	background: #1b435e;
+	}
 
-/* ---------- Recipiente  Botão ----------*/
-.recipiente-btn .btn-abrir-formulario {
-	width: 50px;
-	height: 50px;
-	font-size: 20px;
-	line-height: 20px;
-	background: #2364d2;
-	color: rgb(27, 26, 26);
-	position: relative;
-	top: -25px;
-	z-index: 3;
-	border-radius: 100%;
-	box-shadow: -5px 4px 8px rgba(24, 56, 182, 0.4);
-	padding: 5px;
-	transition: all .2s ease;
-	border: none;
-	cursor: pointer;
-}
-
-.recipiente-btn .btn-abrir-formulario:hover {
-	background: #1850b1;
-}
-
-.recipiente-btn .btn-abrir-formulario.active {
-	transform: rotate(45deg);
-}
-
-/* ---------- Formulario Dados Cartão ----------*/
-.formulario-cartao {
-	background: #fff;
-	width: 100%;
-	max-width: 700px;
-	padding: 150px 30px 30px 30px;
-	border-radius: 10px;
-	position: relative;
-	top: -150px;
-	z-index: 1;
-	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-	transition: clip-path .3s ease-out;
-}
-
-
-.formulario-cartao label {
-	display: block;
-	color: #7d8994;
-	margin-bottom: 5px;
-	font-size: 16px;
-}
-
-.formulario-cartao input,
-.formulario-cartao select,
-.btn-enviar {
-	border: 2px solid #CED6E0;
-	font-size: 18px;
-	height: 50px;
-	width: 100%;
-	padding: 5px 12px;
-	transition: .3s ease all;
-	border-radius: 5px;
-}
-
-.formulario-cartao input:hover,
-.formulario-cartao select:hover {
-	border: 2px solid #93BDED;
-}
-
-.formulario-cartao input:focus,
-.formulario-cartao select:focus {
-	outline: rgb(4, 4, 4);
-	box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
-}
-
-.formulario-cartao input {
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-
-.formulario-cartao .flexbox {
-	display: flex;
-	justify-content: space-between;
-}
-
-.formulario-cartao .expira {
-	width: 100%;
-}
-
-
-.formulario-cartao .grupo-select {
-	width: 100%;
-	margin-right: 15px;
-	position: relative;
-}
-
-.formulario-cartao select {
-	-webkit-appearance: none;
-}
-
-.formulario-cartao .grupo-select i {
-	position: absolute;
-	color: #CED6E0;
-	top: 18px;
-	right: 15px;
-	transition: .3s ease all;
-}
-
-.formulario-cartao .grupo-select:hover i {
-	color: #93bfed;
-}
-
-.formulario-cartao .btn-enviar {
-	border: none;
-	padding: 10px;
-	font-size: 22px;
-	color: #fff;
-	background: #2364d2;
-	box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
-	cursor: pointer;
-}
-
-.formulario-cartao .btn-enviar:hover {
-	background: #1850b1;
-}

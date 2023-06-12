@@ -14,7 +14,7 @@ function validatorCard() {
 	if (numCartao === "") {
 		return alert("Digite um número");
 	}
-	else if (result == true) {
+	else if (result) {
 		alert(cardMaskify + " CARTÃO VÁLIDO");
 	}
 	else {
